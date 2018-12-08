@@ -40,11 +40,13 @@ class Flinkster2GBFS(private val token: String) {
     }
 
     fun generateGbfs(flinksterProvider: FlinksterProvider) {
+        val requestTime = Date().time / 1000 // convert to seconds
         val stations = requestStations(flinksterProvider)
         val gbfsStations = convertToGbfsStationInfo(stations)
         val bookingProposals = requestBookingProposals(flinksterProvider, stations)
-        val stationsStatus = convertToStationStatus(bookingProposals)
-        GBFSWriter().writeGbfs(out, flinksterProvider.systemInformation, gbfsStations, stationsStatus)
+        val stationsStatus = convertToStationStatus(bookingProposals, requestTime)
+        // TODO set ttl to a reasonable value
+        GBFSWriter().writeGbfs(out, requestTime, 60000, flinksterProvider.systemInformation, gbfsStations, stationsStatus)
     }
 
     private fun convertToGbfsStation(station: Model.Area): Station {
@@ -58,20 +60,19 @@ class Flinkster2GBFS(private val token: String) {
         )
     }
 
-    private fun convertToStationStatus(bookingProposals: Map<String, Map<String, Model.RentalObject>>): StationsStatus {
-        val stationsStatus = bookingProposals.map { convertToStationInfo(it) }
+    private fun convertToStationStatus(bookingProposals: Map<String, Map<String, Model.RentalObject>>, requestTime: Long): StationsStatus {
+        val stationsStatus = bookingProposals.map { convertToStationInfo(it, requestTime) }
         return StationsStatus(stationsStatus)
     }
 
-    private fun convertToStationInfo(it: Map.Entry<String, Map<String, Model.RentalObject>>): StationStatus {
+    private fun convertToStationInfo(it: Map.Entry<String, Map<String, Model.RentalObject>>, requestTime: Long): StationStatus {
         return StationStatus(
                 station_id = it.key,
                 // TODO bikes and pedelecs should become two publications, so we need to filter here
                 num_bikes_available = it.value.size,
-                // TODO Flinkster doesn't publish number of available docks, we shouls ask for this...
+                // TODO Flinkster doesn't publish number of available docks, we should ask for this...
                 num_docks_available = 99,
-                // TODO better set explicitly to time of first request
-                last_reported = Date().time
+                last_reported = requestTime
         )
     }
 

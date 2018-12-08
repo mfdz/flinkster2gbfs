@@ -10,7 +10,7 @@ class FlinksterServiceTest {
 
     @Test
     fun testGetArea(){
-        val flinksterService = FlinksterService("6bcc473d316bdd7ff2f1d440d04f28b8")
+        val flinksterService = FlinksterService(System.getenv("FLINKSTER_TOKEN"))
         val areas = flinksterService.getAreas(2, type="station", provider = "regiorad_stuttgart")
         Assertions.assertTrue(areas.size > 50, "Retrieved less than expected stations")
         println(areas)

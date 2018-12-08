@@ -3,6 +3,10 @@ package de.mfdz.flinkster2gbfs.gbfs
 import java.net.URL
 import java.util.*
 
+data class GBFSMetaSystemInformation(val last_updated: Long,
+                    val ttl: Int,
+                    val data: SystemInformation)
+
 data class SystemInformation(val system_id: String,
                              val language: String,
                              val name: String,
@@ -16,6 +20,10 @@ data class SystemInformation(val system_id: String,
                              val timezone: TimeZone,
                              val license_url: URL? = null)
 
+data class GBFSMetaStationsStatus(val last_updated: Long,
+                                     val ttl: Int,
+                                     val data: StationsStatus)
+
 data class StationsStatus(val stations: List<StationStatus>)
 
 data class StationStatus(val station_id: String,
@@ -28,6 +36,10 @@ data class StationStatus(val station_id: String,
                          val is_returning: Boolean = true,
                          val last_reported: Long)
 // TODO POSIX timestamp representation?
+
+data class GBFSMetaStationInformation(val last_updated: Long,
+                                     val ttl: Int,
+                                     val data: StationInformation)
 
 data class StationInformation(val stations: List<Station>)
 
