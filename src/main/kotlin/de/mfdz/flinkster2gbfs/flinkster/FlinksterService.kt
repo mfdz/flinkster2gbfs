@@ -100,16 +100,16 @@ class FlinksterService(val token:String, val apiURL:String="https://api.deutsche
     fun getBookingProposals(providerNetwork: Int, stations: List<Model.Area>): HashMap<String, MutableMap<String, Model.RentalObject>> {
         val proposalsPerStation = HashMap<String, MutableMap<String, Model.RentalObject>>()
         // put stations in hashSet stationsToRetrieve
-        val stationsToRetrieve = stations.map{it.href.toString() to it}.toMap().toMutableMap()
+        val stationsToRetrieve = stations.map{it.uid to it}.toMap().toMutableMap()
         while (!stationsToRetrieve.isEmpty()) {
             val currentStation = stationsToRetrieve.values.random()
-            val currentStationHref = currentStation.href.toString()
+            val currentStationUid = currentStation.uid
 
             // request all booking proposals around this coord
             val proposals = getBookingProposals(providerNetwork, currentStation)
 
             for (proposal in proposals) {
-                val stationUid = proposal.area.href.toString()
+                val stationUid = proposal.area.href.toString().substringAfterLast("/")
                 if (proposalsPerStation.containsKey(stationUid)){
                     proposalsPerStation[stationUid]!![proposal.rentalObject.uid]=proposal.rentalObject
                 } else {
@@ -119,11 +119,11 @@ class FlinksterService(val token:String, val apiURL:String="https://api.deutsche
                 stationsToRetrieve.remove(stationUid)
             }
             // if no rentalObject was found for this station, we add an empty collection to reflect this
-            if (!proposalsPerStation.containsKey(currentStationHref)){
-                proposalsPerStation[currentStationHref] = emptyMap<String, Model.RentalObject>().toMutableMap()
+            if (!proposalsPerStation.containsKey(currentStationUid)){
+                proposalsPerStation[currentStationUid] = emptyMap<String, Model.RentalObject>().toMutableMap()
             }
             // remove the current station, even if no match was found
-            stationsToRetrieve.remove(currentStation.href.toString())
+            stationsToRetrieve.remove(currentStationUid)
         }
         return proposalsPerStation
     }
