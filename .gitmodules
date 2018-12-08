@@ -1,0 +1,3 @@
+[submodule "kotlin-geojson-moshi"]
+	path = kotlin-geojson-moshi
+	url = https://github.com/quiqua/kotlin-geojson-moshi.git

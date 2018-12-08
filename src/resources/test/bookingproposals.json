@@ -1,0 +1,2120 @@
+{
+  "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/bookingproposals?lat=48.78232&lon=9.17702&radius=10000&offset=0&limit=50&providernetwork=2&expand=rentalobject",
+  "offset": 0,
+  "limit": 50,
+  "size": 50,
+  "items": [
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/85384BC12FA6A5B487E0AA3DB56410AB25C7D257",
+        "uid": "85384BC12FA6A5B487E0AA3DB56410AB25C7D257",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184790,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21512
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21512"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/26F77C016BB7E2F023C02EFF6200144D01A1A4F2",
+        "uid": "26F77C016BB7E2F023C02EFF6200144D01A1A4F2",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184795,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21517
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21517"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/A9814D5490E2AE9D62DDFE1F18BD1641976F93DF",
+        "uid": "A9814D5490E2AE9D62DDFE1F18BD1641976F93DF",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185043,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21765
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21765"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/66F200A2C06D6C5C2B5A56BB0BBA0BF42EDCB679",
+        "uid": "66F200A2C06D6C5C2B5A56BB0BBA0BF42EDCB679",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184995,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21717
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21717"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/C5D2B11E32A5317454F5F8AA32AF4CD183F94AC0",
+        "uid": "C5D2B11E32A5317454F5F8AA32AF4CD183F94AC0",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184275,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 20997
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=20997"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/847D82CA7FC3B5558CF636F5E739502DBB924AD6",
+        "uid": "847D82CA7FC3B5558CF636F5E739502DBB924AD6",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184509,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21231
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21231"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/F5CDA92A9DFF68D2969AE3F7E17327C9AF5CD901",
+        "uid": "F5CDA92A9DFF68D2969AE3F7E17327C9AF5CD901",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184866,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21588
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21588"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/FDA68BEA9AC8D4B86FE3175C3B5C3907D23C0425",
+        "uid": "FDA68BEA9AC8D4B86FE3175C3B5C3907D23C0425",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184691,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21413
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21413"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/C057B5670BE2225C456338060855189B8A77BF23",
+        "uid": "C057B5670BE2225C456338060855189B8A77BF23",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184495,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21217
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21217"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/3FD022AB9D54EAAEAE2AEEF6C7FE035D51C719D8",
+        "uid": "3FD022AB9D54EAAEAE2AEEF6C7FE035D51C719D8",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 186240,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22962
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22962"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/3A788E18050134D4CE4F4C5B8FEC5475B8AD9F1D",
+        "uid": "3A788E18050134D4CE4F4C5B8FEC5475B8AD9F1D",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185881,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 22603
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22603"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/06D24970025F9CCA5F11FB44C28C12A1F782112B",
+        "uid": "06D24970025F9CCA5F11FB44C28C12A1F782112B",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 186235,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22957
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/3B84B2FF750AB585D4DF7CAFBBCCE85730A2D239"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17539,
+          48.7824
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22957"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/e2e18a6d-c3a8-4e9d-8c0f-d56dbd07586b",
+        "uid": "e2e18a6d-c3a8-4e9d-8c0f-d56dbd07586b",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 186250,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22972
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/FE98EABF45DABABA36DEAF660FDA43983E275FEE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17978,
+          48.7829
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22972"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/C31B8B8B805F85F3F31ED492793F8AE2CD58E59A",
+        "uid": "C31B8B8B805F85F3F31ED492793F8AE2CD58E59A",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185917,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 22639
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/FE98EABF45DABABA36DEAF660FDA43983E275FEE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17978,
+          48.7829
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22639"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/9F8F58600F390D9B21F5AF0D5ACAB869098C97DB",
+        "uid": "9F8F58600F390D9B21F5AF0D5ACAB869098C97DB",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184409,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21131
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/FE98EABF45DABABA36DEAF660FDA43983E275FEE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17978,
+          48.7829
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21131"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/b6cbabcb-c1c1-48c4-9ea0-a21ebc92c371",
+        "uid": "b6cbabcb-c1c1-48c4-9ea0-a21ebc92c371",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185851,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22573
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/FE98EABF45DABABA36DEAF660FDA43983E275FEE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17978,
+          48.7829
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22573"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/91EF8008B3BDB56C2AD32934BA71C3963EF49E78",
+        "uid": "91EF8008B3BDB56C2AD32934BA71C3963EF49E78",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 186096,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22818
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/FE98EABF45DABABA36DEAF660FDA43983E275FEE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17978,
+          48.7829
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22818"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/78640C4A044F1D1298EBBF75FA8CB138FFB9F26E",
+        "uid": "78640C4A044F1D1298EBBF75FA8CB138FFB9F26E",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 186105,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22827
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/FE98EABF45DABABA36DEAF660FDA43983E275FEE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17978,
+          48.7829
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22827"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/40E0F3A6B11C880180932ADA98ECCA5F67149682",
+        "uid": "40E0F3A6B11C880180932ADA98ECCA5F67149682",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184919,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21641
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/FE98EABF45DABABA36DEAF660FDA43983E275FEE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17978,
+          48.7829
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21641"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/D3020CC32F0E2CC242DBB048F90E8A5D42061C28",
+        "uid": "D3020CC32F0E2CC242DBB048F90E8A5D42061C28",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 186035,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22757
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/FE98EABF45DABABA36DEAF660FDA43983E275FEE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17978,
+          48.7829
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22757"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/1D27073C399A4021881598B15DA08D63A81A8E7A",
+        "uid": "1D27073C399A4021881598B15DA08D63A81A8E7A",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184215,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 20937
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/39057B540196460DF703E2B23ACF0F6F9D472CE4"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18029,
+          48.781907
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=20937"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/4d10e513-9506-464a-aedd-686c0176519d",
+        "uid": "4d10e513-9506-464a-aedd-686c0176519d",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185843,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22565
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/39057B540196460DF703E2B23ACF0F6F9D472CE4"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18029,
+          48.781907
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22565"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/739E183B31DFD3B9DC37DB0649CEDD53F0653AA5",
+        "uid": "739E183B31DFD3B9DC37DB0649CEDD53F0653AA5",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184414,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21136
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/39057B540196460DF703E2B23ACF0F6F9D472CE4"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18029,
+          48.781907
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21136"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/6776B95A81EF305C9C12FB19F84070EC9E7E082E",
+        "uid": "6776B95A81EF305C9C12FB19F84070EC9E7E082E",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185764,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22486
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/39057B540196460DF703E2B23ACF0F6F9D472CE4"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18029,
+          48.781907
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22486"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/F0306E24F25B519C4BCAE428EDFB4484BA709030",
+        "uid": "F0306E24F25B519C4BCAE428EDFB4484BA709030",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185911,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 22633
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/39057B540196460DF703E2B23ACF0F6F9D472CE4"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18029,
+          48.781907
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22633"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/1EE0CF8851F018AA21EE309AAF3AD05E53A288E0",
+        "uid": "1EE0CF8851F018AA21EE309AAF3AD05E53A288E0",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185883,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 22605
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22605"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/64B75C2D3AE7790A4E46D985F8223C3AC74D46A0",
+        "uid": "64B75C2D3AE7790A4E46D985F8223C3AC74D46A0",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185790,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22512
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22512"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/EA1BAD9F3A9FBFE61BBF029D45A1D298FB38AACF",
+        "uid": "EA1BAD9F3A9FBFE61BBF029D45A1D298FB38AACF",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184992,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21714
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21714"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/2279864614888CB3E18F25ECDB3F699FFFC0D3BC",
+        "uid": "2279864614888CB3E18F25ECDB3F699FFFC0D3BC",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184529,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21251
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21251"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/CA52FEDE902C2317EF1E1E890C60D0B8043B920E",
+        "uid": "CA52FEDE902C2317EF1E1E890C60D0B8043B920E",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185029,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21751
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21751"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/B521DC02D7CB0F7DC1830E282EA38F5A13AF8C68",
+        "uid": "B521DC02D7CB0F7DC1830E282EA38F5A13AF8C68",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185923,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 22645
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22645"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/095c91b7-0ed7-4de8-b452-459d9db77686",
+        "uid": "095c91b7-0ed7-4de8-b452-459d9db77686",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185036,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21758
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21758"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/DCB8ECF570DDB2E51D8ED61CDEC73CD86A8AEAC9",
+        "uid": "DCB8ECF570DDB2E51D8ED61CDEC73CD86A8AEAC9",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184527,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21249
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21249"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/50E34D4A9FF05271F10E2D756DE611DC00A90ABF",
+        "uid": "50E34D4A9FF05271F10E2D756DE611DC00A90ABF",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184385,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21107
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21107"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/7C2932D8E2D1F92892B2EA1D936D11E2797C368D",
+        "uid": "7C2932D8E2D1F92892B2EA1D936D11E2797C368D",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184422,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21144
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21144"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/59F374154DA20A589007AABA0A79FD57F4BACB1B",
+        "uid": "59F374154DA20A589007AABA0A79FD57F4BACB1B",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184948,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21670
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21670"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/BAFFAE1A475AD81A7C620D0BE0CBA861A790571C",
+        "uid": "BAFFAE1A475AD81A7C620D0BE0CBA861A790571C",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184256,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 20978
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=20978"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/109B890287070E13AC249AEBC59230E73CBB91BC",
+        "uid": "109B890287070E13AC249AEBC59230E73CBB91BC",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184384,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21106
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21106"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/9085095B24E589F8213B28D24634C026B0A325F9",
+        "uid": "9085095B24E589F8213B28D24634C026B0A325F9",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184883,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21605
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21605"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/4EF950639837EB349D8FA3A7F9AFE917876FFAAD",
+        "uid": "4EF950639837EB349D8FA3A7F9AFE917876FFAAD",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185068,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21790
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21790"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/F23D8DADA70760283671A6892F560B933B302E64",
+        "uid": "F23D8DADA70760283671A6892F560B933B302E64",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185017,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21739
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21739"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/DFD56CF95805047FB60A4A14CC955B1ACE04C23F",
+        "uid": "DFD56CF95805047FB60A4A14CC955B1ACE04C23F",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184299,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21021
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/0F5A28A0847B39CB624587C7D07B8133C5030244"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.17671,
+          48.77943
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21021"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/50a329da-1921-459e-96be-8ec59619cd56",
+        "uid": "50a329da-1921-459e-96be-8ec59619cd56",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185836,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22558
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/7EBB5875DE3F16437FC62A37E38607425D87A3CE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18189,
+          48.782572
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22558"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/35EDB488C36C6D17462CB147C245A6F1501FE681",
+        "uid": "35EDB488C36C6D17462CB147C245A6F1501FE681",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185812,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22534
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/7EBB5875DE3F16437FC62A37E38607425D87A3CE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18189,
+          48.782572
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22534"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/14A2E29DBE047A5DA3CDFF13924286449ECA2AB3",
+        "uid": "14A2E29DBE047A5DA3CDFF13924286449ECA2AB3",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184721,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21443
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/7EBB5875DE3F16437FC62A37E38607425D87A3CE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18189,
+          48.782572
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21443"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/B6D1CD9FE3E321BBCFD40625198E60B030DCF916",
+        "uid": "B6D1CD9FE3E321BBCFD40625198E60B030DCF916",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185041,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21763
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/7EBB5875DE3F16437FC62A37E38607425D87A3CE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18189,
+          48.782572
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21763"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/18DF85C76F96FCFF2F399DE5A4F3AC4E4D65A552",
+        "uid": "18DF85C76F96FCFF2F399DE5A4F3AC4E4D65A552",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185789,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22511
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/7EBB5875DE3F16437FC62A37E38607425D87A3CE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18189,
+          48.782572
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22511"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/93CFB1E5F94E55337D6182D8E7AF60AC17CF1B65",
+        "uid": "93CFB1E5F94E55337D6182D8E7AF60AC17CF1B65",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 184826,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50000"
+        },
+        "attributes": {
+          "licenseplate": 21548
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/7EBB5875DE3F16437FC62A37E38607425D87A3CE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18189,
+          48.782572
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50000"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21548"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/5E3C9BD377CFC9EE3D2ED7D5294E3E062925D33A",
+        "uid": "5E3C9BD377CFC9EE3D2ED7D5294E3E062925D33A",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185742,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 22464
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/7EBB5875DE3F16437FC62A37E38607425D87A3CE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18189,
+          48.782572
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=22464"
+        }
+      ]
+    },
+    {
+      "expand": "area,rentalobject,price",
+      "rentalObject": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/rentalobjects/c39cfc49-75cd-4ab9-ac32-f60b8d01d9ab",
+        "uid": "c39cfc49-75cd-4ab9-ac32-f60b8d01d9ab",
+        "name": "Fahrrad",
+        "description": "Fahrrad",
+        "providerRentalObjectId": 185135,
+        "rentalModel": "stationbased",
+        "type": "bike",
+        "provider": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providers/regiorad_stuttgart"
+        },
+        "category": {
+          "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/categories/50001"
+        },
+        "attributes": {
+          "licenseplate": 21857
+        }
+      },
+      "area": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/areas/7EBB5875DE3F16437FC62A37E38607425D87A3CE"
+      },
+      "position": {
+        "type": "Point",
+        "coordinates": [
+          9.18189,
+          48.782572
+        ]
+      },
+      "distance": 0,
+      "price": {
+        "href": "https://api.deutschebahn.com/flinkster-api-ng/v1/providernetworks/2/prices?provider=regiorad_stuttgart&category=50001"
+      },
+      "_links": [
+        {
+          "rel": "AppBookingLink",
+          "verb": "GET",
+          "href": "callabike://rentbike?bike=21857"
+        }
+      ]
+    }
+  ],
+  "_links": [
+    {
+      "rel": "AppleAppStore",
+      "verb": "GET",
+      "href": "https://itunes.apple.com/de/app/call-a-bike/id420360589"
+    },
+    {
+      "rel": "GooglePlayStore",
+      "verb": "GET",
+      "href": "https://play.google.com/store/apps/details?id=de.bahn.callabike&hl=de"
+    }
+  ]
+}
