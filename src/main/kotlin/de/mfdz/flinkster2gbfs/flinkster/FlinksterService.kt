@@ -1,20 +1,21 @@
 package de.mfdz.flinkster2gbfs.flinkster
 
+import com.squareup.moshi.JsonDataException
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.adapters.Rfc3339DateJsonAdapter
 import de.mfdz.flinkster2gbfs.json.GeometryJsonAdapter
 import de.mfdz.flinkster2gbfs.json.URLAdapter
-import eu.quiqua.geojson.moshi.FeatureJsonAdapter
 import okhttp3.Interceptor
 import okhttp3.OkHttpClient
 import okhttp3.Response
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import java.io.IOException
 import java.util.*
 import java.util.concurrent.TimeUnit
 
-class FlinksterService(val token:String, val apiURL:String="https://api.deutschebahn.com/flinkster-api-ng/v1/"){
+class FlinksterService(val token:String, val level:String="NONE", val apiURL:String="https://api.deutschebahn.com/flinkster-api-ng/v1/"){
     val MAX_LIMIT_GET_AREAS = 100
     val MAX_LIMIT_GET_BOOKING_PROPOSALS = 50
     val MAX_RADIUS_GET_BOOKING_PROPOSALS = 10000
@@ -22,9 +23,12 @@ class FlinksterService(val token:String, val apiURL:String="https://api.deutsche
     var flinksterAPI:FlinksterAPI
 
     init {
+        val loggingInterceptor = HttpLoggingInterceptor()
+        loggingInterceptor.setLevel(HttpLoggingInterceptor.Level.valueOf(level))
         val httpClient = OkHttpClient.Builder()
                 .addInterceptor(AddHeaderInterceptor("Authorization", "Bearer "+token))
                 .addInterceptor(AddHeaderInterceptor("Accept", "application/json"))
+                .addInterceptor(loggingInterceptor)
                 .connectTimeout(60, TimeUnit.SECONDS) //
                 .build()
 
@@ -55,14 +59,19 @@ class FlinksterService(val token:String, val apiURL:String="https://api.deutsche
                     MAX_LIMIT_GET_AREAS, offset, provider, type).execute()
             val body = result.body()
             if (body == null) {
-                // TODO wait and retry if rate exceeded
-                throw IOException(result.message())
+                print(result.errorBody())
+                if (result.code()==500) {
+                    println(result.raw())
+                    println("Sleeping for 2s")
+                    Thread.sleep(2000)
+                } else {
+                    throw IOException(result.message())
+                }
             } else {
-                println(body)
                 areas.addAll(body!!.items)
                 offset += MAX_LIMIT_GET_AREAS
             }
-        } while (offset < body!!.size)
+        } while (body == null || offset < body!!.size)
 
         return areas
     }
@@ -73,9 +82,10 @@ class FlinksterService(val token:String, val apiURL:String="https://api.deutsche
         var lastSize = 0
 
         do {
-            val result = flinksterAPI.getBookingProposals(providerNetwork,
-                    currentStation.lat, currentStation.lon, MAX_LIMIT_GET_BOOKING_PROPOSALS,
-                    offset, MAX_RADIUS_GET_BOOKING_PROPOSALS,"rentalobject").execute()
+            try {
+                val result = flinksterAPI.getBookingProposals(providerNetwork,
+                        currentStation.lat, currentStation.lon, MAX_LIMIT_GET_BOOKING_PROPOSALS,
+                        offset, MAX_RADIUS_GET_BOOKING_PROPOSALS, "rentalobject").execute()
             val body = result.body()
             if (body == null) {
                 // TODO wait and retry if rate exceeded
@@ -88,11 +98,14 @@ class FlinksterService(val token:String, val apiURL:String="https://api.deutsche
                     throw IOException(result.message())
                 }
             } else {
-                println(body)
                 proposals.addAll(body!!.items)
                 offset += MAX_LIMIT_GET_BOOKING_PROPOSALS
                 lastSize = body!!.size
             }
+            } catch (e: JsonDataException){
+                print(e)
+            }
+
         } while (MAX_LIMIT_GET_BOOKING_PROPOSALS == lastSize)
         return proposals
     }
@@ -127,9 +140,6 @@ class FlinksterService(val token:String, val apiURL:String="https://api.deutsche
         }
         return proposalsPerStation
     }
-
-
-
 }
 
 class AddHeaderInterceptor(private val name:String, private val value:String): Interceptor {

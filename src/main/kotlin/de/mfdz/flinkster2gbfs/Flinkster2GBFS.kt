@@ -2,12 +2,8 @@ package de.mfdz.flinkster2gbfs
 
 import de.mfdz.flinkster2gbfs.flinkster.FlinksterService
 import de.mfdz.flinkster2gbfs.flinkster.Model
-import com.squareup.moshi.Moshi
-import com.squareup.moshi.adapters.Rfc3339DateJsonAdapter
 import de.mfdz.flinkster2gbfs.gbfs.*
-import de.mfdz.flinkster2gbfs.json.TimeZoneAdapter
-import de.mfdz.flinkster2gbfs.json.URLAdapter
-import java.io.File
+import java.time.LocalDateTime
 import java.net.URL
 import java.util.*
 
@@ -21,13 +17,13 @@ fun createRegioRadProvider(): FlinksterProvider {
             "de.mfdz.flinkster.cab.regiorad_stuttgart",
             "DE", "RegioRadStuttgart", operator = "DB Call a Bike",
             timezone = TimeZone.getTimeZone("CET"),
-            url = URL("https://www.callabike-interaktiv.de/de/staedte/stuttgart")))
+            url = URL("https://www.regioradstuttgart.de/de")))
 }
 
-class Flinkster2GBFS(private val token: String) {
+class Flinkster2GBFS(private val token: String, private val logLevel: String) {
     private val out = "."
 
-    private val flinksterService = FlinksterService(token)
+    private val flinksterService = FlinksterService(token, logLevel)
 
     private fun requestStations(flinksterProvider: FlinksterProvider): List<Model.Area> {
         return flinksterService.getAreas(flinksterProvider.providerNetwork,
@@ -83,5 +79,11 @@ class Flinkster2GBFS(private val token: String) {
 }
 
 fun main(args: Array<String>) {
-    Flinkster2GBFS(System.getenv("FLINKSTER_TOKEN")).generateGbfs(createRegioRadProvider())
+    val shouldLoop : Boolean = (System.getenv("FLINKSTER_LOOP") ?: "false").toBoolean()
+    do {
+        Flinkster2GBFS(System.getenv("FLINKSTER_TOKEN"),    System.getenv("LOG_LEVEL")
+                ?: "NONE").generateGbfs(createRegioRadProvider())
+        val current = LocalDateTime.now()
+        println("$current Updated GBFS feed.")
+    } while (shouldLoop)
 }
