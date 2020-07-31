@@ -41,6 +41,15 @@ class Flinkster2GBFS(private val token: String, private val logLevel: String) {
         val gbfsStations = convertToGbfsStationInfo(stations)
         val bookingProposals = requestBookingProposals(flinksterProvider, stations)
         val stationsStatus = convertToStationStatus(bookingProposals, requestTime)
+        val herrenbergStatus = stationsStatus.stations.find { it.station_id == "7bd6d9cb-509b-4378-83db-cebb44ee1f6f" }
+        if(herrenbergStatus == null) {
+            println("Herrenberg bike rental station not found in GBFS feed!")
+        }
+        if(herrenbergStatus?.num_bikes_available == 0) {
+            println("Herrenberg bike rental station has 0 free bikes")
+            println("Status: $herrenbergStatus")
+            println("Booking proposals: $bookingProposals")
+        }
         // TODO set ttl to a reasonable value
         GBFSWriter().writeGbfs(out, requestTime, 60000, flinksterProvider.systemInformation, gbfsStations, stationsStatus)
     }
