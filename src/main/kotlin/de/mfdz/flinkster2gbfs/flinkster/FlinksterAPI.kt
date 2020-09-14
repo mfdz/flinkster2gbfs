@@ -10,8 +10,6 @@ import java.net.URL
 import java.util.*
 
 object Model {
-    val herrenbergId = "7bd6d9cb-509b-4378-83db-cebb44ee1f6f"
-
     data class AreasResult(val limit: Int,
                            val size: Int,
                            val offset: Int,
