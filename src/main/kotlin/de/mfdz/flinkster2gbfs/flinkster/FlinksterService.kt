@@ -12,6 +12,7 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import java.io.IOException
+import java.nio.charset.StandardCharsets
 import java.util.*
 import java.util.concurrent.TimeUnit
 
@@ -79,7 +80,7 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
     private fun getBookingProposals(providerNetwork: Int, currentStation: Model.Area): List<Model.BookingProposal> {
         val proposals = ArrayList<Model.BookingProposal>()
         var offset = 0
-        var lastSize = 0
+        var lastSize = MAX_LIMIT_GET_BOOKING_PROPOSALS
 
         do {
             try {
@@ -90,17 +91,18 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
             if (body == null) {
                 // TODO wait and retry if rate exceeded
                 print(result.errorBody())
-                if (result.code()==500) {
+                if (result.code() == 500) {
                     println(result.raw())
-                    println("Sleeping for 2s")
-                    Thread.sleep(2000)
+                    val sleepSecs = 15L
+                    println("Sleeping for ${sleepSecs}s")
+                    Thread.sleep(sleepSecs * 1000)
                 } else {
                     throw IOException(result.message())
                 }
             } else {
-                proposals.addAll(body!!.items)
+                proposals.addAll(body.items)
                 offset += MAX_LIMIT_GET_BOOKING_PROPOSALS
-                lastSize = body!!.size
+                lastSize = body.size
             }
             } catch (e: JsonDataException){
                 print(e)
@@ -124,7 +126,7 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
             for (proposal in proposals) {
                 val stationUid = proposal.area.href.toString().substringAfterLast("/")
                 if (proposalsPerStation.containsKey(stationUid)){
-                    proposalsPerStation[stationUid]!![proposal.rentalObject.uid]=proposal.rentalObject
+                    proposalsPerStation[stationUid]!![proposal.rentalObject.uid] = proposal.rentalObject
                 } else {
                     proposalsPerStation[stationUid] = mutableMapOf(proposal.rentalObject.uid to proposal.rentalObject)
                 }
@@ -133,6 +135,7 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
             }
             // if no rentalObject was found for this station, we add an empty collection to reflect this
             if (!proposalsPerStation.containsKey(currentStationUid)){
+                println("Proposals did not contain station id ${currentStation}")
                 proposalsPerStation[currentStationUid] = emptyMap<String, Model.RentalObject>().toMutableMap()
             }
             // remove the current station, even if no match was found
