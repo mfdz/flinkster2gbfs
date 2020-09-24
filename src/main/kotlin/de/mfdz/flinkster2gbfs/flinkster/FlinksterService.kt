@@ -18,7 +18,7 @@ import java.util.concurrent.TimeUnit
 
 class FlinksterService(val token:String, val level:String="NONE", val apiURL:String="https://api.deutschebahn.com/flinkster-api-ng/v1/"){
     val MAX_LIMIT_GET_AREAS = 100
-    val MAX_LIMIT_GET_BOOKING_PROPOSALS = 50
+    val MAX_LIMIT_GET_BOOKING_PROPOSALS = 100
     val MAX_RADIUS_GET_BOOKING_PROPOSALS = 10000
 
     var flinksterAPI:FlinksterAPI
@@ -80,7 +80,7 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
     private fun getBookingProposals(providerNetwork: Int, currentStation: Model.Area): List<Model.BookingProposal> {
         val proposals = ArrayList<Model.BookingProposal>()
         var offset = 0
-        var lastSize = MAX_LIMIT_GET_BOOKING_PROPOSALS
+        var totalSize = 0;
 
         do {
             try {
@@ -102,13 +102,13 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
             } else {
                 proposals.addAll(body.items)
                 offset += MAX_LIMIT_GET_BOOKING_PROPOSALS
-                lastSize = body.size
+                totalSize = body.size
             }
             } catch (e: JsonDataException){
                 print(e)
             }
 
-        } while (MAX_LIMIT_GET_BOOKING_PROPOSALS == lastSize)
+        } while (offset < totalSize)
         return proposals
     }
 
