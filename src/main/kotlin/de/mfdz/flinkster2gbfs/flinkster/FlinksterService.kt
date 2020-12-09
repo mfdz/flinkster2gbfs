@@ -69,10 +69,10 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
                     throw IOException(result.message())
                 }
             } else {
-                areas.addAll(body!!.items)
+                areas.addAll(body.items)
                 offset += MAX_LIMIT_GET_AREAS
             }
-        } while (body == null || offset < body!!.size)
+        } while (body == null || offset < body.size)
 
         return areas
     }
@@ -116,7 +116,6 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
             } catch (e: JsonDataException){
                 print(e)
             }
-
         } while (offset < totalSize)
         return proposals
     }
@@ -160,9 +159,9 @@ class AddHeaderInterceptor(private val name:String, private val value:String): I
      */
     override fun intercept(chain: Interceptor.Chain): Response {
         var request = chain.request()
-        request = request?.newBuilder()
-                ?.addHeader(name, value)
-                ?.build()
+        request = request.newBuilder()
+                .addHeader(name, value)
+                .build()
         return chain.proceed(request)
     }
 }
