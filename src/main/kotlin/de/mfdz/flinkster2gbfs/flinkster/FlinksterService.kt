@@ -12,9 +12,9 @@ import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import java.io.IOException
-import java.nio.charset.StandardCharsets
 import java.util.*
 import java.util.concurrent.TimeUnit
+import javax.naming.LimitExceededException
 
 class FlinksterService(val token:String, val level:String="NONE", val apiURL:String="https://api.deutschebahn.com/flinkster-api-ng/v1/"){
     val MAX_LIMIT_GET_AREAS = 100
@@ -77,6 +77,18 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
         return areas
     }
 
+    private fun getBookingProposalsWithRetry(providerNetwork: Int, currentStation: Model.Area): List<Model.BookingProposal> {
+        do {
+            try {
+                return getBookingProposals(providerNetwork, currentStation)
+            } catch (e: LimitExceededException) {
+                val sleepSecs = 15L
+                println("Rate limit exceeded, sleeping for ${sleepSecs}s")
+                Thread.sleep(sleepSecs * 1000)
+            }
+        } while (true)
+    }
+    
     private fun getBookingProposals(providerNetwork: Int, currentStation: Model.Area): List<Model.BookingProposal> {
         val proposals = ArrayList<Model.BookingProposal>()
         var offset = 0
@@ -89,13 +101,10 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
                         offset, MAX_RADIUS_GET_BOOKING_PROPOSALS, "rentalobject").execute()
             val body = result.body()
             if (body == null) {
-                // TODO wait and retry if rate exceeded
                 print(result.errorBody())
                 if (result.code() == 500) {
-                    println(result.raw())
-                    val sleepSecs = 15L
-                    println("Sleeping for ${sleepSecs}s")
-                    Thread.sleep(sleepSecs * 1000)
+                    // Note: Instead of returning an appropriate http code, 500 is returned
+                    throw LimitExceededException()
                 } else {
                     throw IOException(result.message())
                 }
@@ -121,7 +130,7 @@ class FlinksterService(val token:String, val level:String="NONE", val apiURL:Str
             val currentStationUid = currentStation.uid
 
             // request all booking proposals around this coord
-            val proposals = getBookingProposals(providerNetwork, currentStation)
+            val proposals = getBookingProposalsWithRetry(providerNetwork, currentStation)
 
             for (proposal in proposals) {
                 val stationUid = proposal.area.href.toString().substringAfterLast("/")

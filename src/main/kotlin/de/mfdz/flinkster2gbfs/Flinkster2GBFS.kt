@@ -80,10 +80,20 @@ class Flinkster2GBFS(private val token: String, private val logLevel: String) {
 
 fun main(args: Array<String>) {
     val shouldLoop : Boolean = (System.getenv("FLINKSTER_LOOP") ?: "false").toBoolean()
+    var timesFailedInARow : Double = 0.0;
     do {
-        Flinkster2GBFS(System.getenv("FLINKSTER_TOKEN"),    System.getenv("LOG_LEVEL")
-                ?: "NONE").generateGbfs(createRegioRadProvider())
-        val current = LocalDateTime.now()
-        println("$current Updated GBFS feed.")
+        try {
+            Flinkster2GBFS(System.getenv("FLINKSTER_TOKEN"), System.getenv("LOG_LEVEL")
+                    ?: "NONE").generateGbfs(createRegioRadProvider())
+            val current = LocalDateTime.now()
+            println("$current Updated GBFS feed.")
+            timesFailedInARow = 0.0
+        } catch (e: Exception) {
+            e.printStackTrace()
+            val secondsToWait: Long = 10 * Math.pow(2.0,timesFailedInARow).toLong()
+            Thread.sleep(secondsToWait * 1000L)
+            println("Wait $secondsToWait before trying next update.")
+            timesFailedInARow += 1.0;
+        }
     } while (shouldLoop)
 }
